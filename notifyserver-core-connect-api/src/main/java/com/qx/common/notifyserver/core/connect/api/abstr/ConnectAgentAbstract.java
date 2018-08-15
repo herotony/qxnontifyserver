@@ -25,7 +25,6 @@ public abstract class ConnectAgentAbstract implements ConnectAgent {
         this.url = url;
     }
 
-    @Override
     public void connect() throws Exception{
 
         try{
@@ -39,41 +38,34 @@ public abstract class ConnectAgentAbstract implements ConnectAgent {
         }
     }
 
-    @Override
     public void close() throws Exception{
 
         connectStatus.set(false);
         closeActual();
     }
 
-    @Override
     public long getConnectId(){
 
         return connectId;
     }
 
-    @Override
     public boolean getConnectStatus(){
 
         return connectStatus.get();
     }
 
-    @Override
     public String getIp() {
         return ip;
     }
 
-    @Override
     public int getPort() {
         return port;
     }
 
-    @Override
     public String getUrl() {
         return url;
     }
 
-    @Override
     public void setConnectStatus(boolean status){
 
         connectStatus.set(status);
