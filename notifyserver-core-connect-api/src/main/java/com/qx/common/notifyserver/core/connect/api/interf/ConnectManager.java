@@ -7,7 +7,7 @@ public interface ConnectManager {
 
     void start() throws Exception;
     void destroy() throws Exception;
-    void startUpdateConnectAgent();
+    void startUpdateConnectAgentImmediately();
     QueueAgent getQueueAgent(String queueName);
     ConnectAgent getConnectAgent(long connectId);
     void setModuleId(long moduleId);

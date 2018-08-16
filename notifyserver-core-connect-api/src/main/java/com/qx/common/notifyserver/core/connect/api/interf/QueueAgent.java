@@ -10,7 +10,7 @@ public interface QueueAgent {
     String getQueueName();
     ConnectAgent getRandomActiveConnectAgent();
     //根据传入的connectAgent提取不同的另外一个connectAgent，所以必定有一系列connectAgent的集合对应改QueueAgent
-    ConnectAgent getAnotherRandomConnectAgent(ConnectAgent connectAgent);
+    ConnectAgent getAnotherRandomActiveConnectAgent(ConnectAgent connectAgent);
     List<ConnectAgent> getAllConnectdAgent();
     //剔除connectAgents中已存在的connectAgent,只追加现有集合中没有的connectAgent
     List<ConnectAgent> replaceWithNewConnectAgent(List<ConnectAgent> connectAgents);

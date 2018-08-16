@@ -56,7 +56,7 @@ public abstract class QueueAgentAbstract implements QueueAgent {
         return connectAgent;
     }
 
-    public ConnectAgent getAnotherRandomConnectAgent(ConnectAgent connectAgent){
+    public ConnectAgent getAnotherRandomActiveConnectAgent(ConnectAgent connectAgent){
 
         ConnectAgent _connectAgent = null;
         int currentSize = 0;
